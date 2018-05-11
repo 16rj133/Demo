@@ -22,7 +22,9 @@
    <include name="**/*.java"/>
   </javac>
  </target>
-
+ <target name="test">  
+        <echo message="test echo messsage: Ant Junit Successfully, basedir=${basedir}" />  
+ </target>  
  <target name="testcompile" depends="compile">
   <depend srcdir="${testSrc.dir}" destdir="${build.classes}"/>
 
